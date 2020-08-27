@@ -27,20 +27,24 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
-      <div class="container">
-        <div class="header__logo">
-          <img src="./img/logo/logo.svg" alt="ubereatsLogo" class="logo" />
-        </div>
-        <div class="header__sidebar">
-          <div class="header__auth">
-            <a href="#" class="auth__link">Войти</a>
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <img src="./img/logo/logo.svg" alt="ubereatsLogo" class="logo" />
           </div>
-          <div class="header__busket">
-            <svg width="19" height="23" class="basket">
-              <use xlink:href="./img/icons.svg#basket"></use>
-            </svg>
+          <div class="header__sidebar ">
+            <div class="header__auth">
+              <a href="#" class="auth__link">Войти</a>
+            </div>
+            <div class="header__busket">
+              <a href="#">
+                <svg width="19" height="23" class="basket">
+                  <use xlink:href="./img/icons.svg#basket"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -48,95 +52,117 @@
     <main class="main">
       <div class="container">
         <form action="" class="main__form">
-          <input type="text" class="main__input" />
+          <input type="text" class="main__input" placeholder="Поиск по ресторанам и кухням"/>
         </form>
-        <section class="restaraunts">
-          <h2 class="restaraunts__title"></h2>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/mcdonalds.png" alt="restraunt card" />
+        <section class="restaurants">
+          <h2 class="restaurants__title">Рестораны в Москве</h2>
+          <div class="row">
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/mcdonalds.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">Макдоналдс - Газетный</h3>
+                <span class="symbol">&#8399&#8399</span>
+                <span class="restaurant__menu">Бургеры</span>
+                <span class="restaurant__time">25 - 35 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">Макдоналдс - Газетный</h3>
-            <span class="symbol">&#8399&#8399</span>
-            <span class="restraunt__menu">Бургеры</span>
-            <span class="restraunt__time">25 - 35 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/dimsum.png" alt="restraunt card" />
+        
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/dimsum.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">DimSum & Co - ЦДМ</h3>
+                <span class="symbol">&#8399</span>
+                <span class="restaurant__menu">Японская</span>
+                <span class="restaurant__menu">Китайская</span>
+                <span class="restaurant__menu">Азиатская</span>
+                <span class="restaurant__time">40 - 50 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">DimSum & Co - ЦДМ</h3>
-            <span class="symbol">&#8399&</span>
-            <span class="restraunt__menu">Японская</span>
-            <span class="restraunt__menu">Китайская</span>
-            <span class="restraunt__menu">Азиатская</span>
-            <span class="restraunt__time">40 - 50 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/dvizhok.png" alt="restraunt card" />
+      
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/dvizhok.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">ДвижОК - Манежная</h3>
+                <span class="symbol">&#8399</span>
+                <span class="restaurant__menu">Американская</span>
+                <span class="restaurant__menu">Европейская</span>
+                <span class="restaurant__time">35 - 45 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">ДвижОК - Манежная</h3>
-            <span class="symbol">&#8399&</span>
-            <span class="restraunt__menu">Американская</span>
-            <span class="restraunt__menu">Европейская</span>
-            <span class="restraunt__time">35 - 45 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/nya.png" alt="restraunt card" />
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/nya.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">Ня - NHA</h3>
+                <span class="symbol">&#8399&#8399</span>
+                <span class="restaurant__menu">Вьетнамская</span>
+                <span class="restaurant__time">30 - 40 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">Ня - NHA</h3>
-            <span class="symbol">&#8399&#8399</span>
-            <span class="restraunt__menu">Вьетнамская</span>
-            <span class="restraunt__time">30 - 40 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/dzi.png" alt="restraunt card" />
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/dzi.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">Точка Дзы - Цветной</h3>
+                <span class="symbol">&#8399&#8399</span>
+                <span class="restaurant__menu">Вьетнамская</span>
+                <span class="restaurant__time">40 - 50 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">Точка Дзы - Цветной</h3>
-            <span class="symbol">&#8399&#8399</span>
-            <span class="restraunt__menu">Вьетнамская</span>
-            <span class="restraunt__time">40 - 50 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/cinnabon.png" alt="restraunt card" />
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/cinnabon.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">Cinnabon</h3>
+                <span class="symbol">&#8399</span>
+                <span class="restaurant__menu">Выпечка</span>
+                <span class="restaurant__menu">Десерты</span>
+                <span class="restaurant__menu">Капкейки</span>
+                <span class="restaurant__time">25 - 35 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">Cinnabon</h3>
-            <span class="symbol">&#8399</span>
-            <span class="restraunt__menu">Выпечка</span>
-            <span class="restraunt__menu">Десерты</span>
-            <span class="restraunt__menu">Капкейки</span>
-            <span class="restraunt__time">25 - 35 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/pizzelove.png" alt="restraunt card" />
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/pizzelove.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">PIZZALOVE</h3>
+                <span class="symbol">&#8399&#8399</span>
+                <span class="restaurant__menu">Пицца</span>
+                <span class="restaurant__time">15 - 25 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">PIZZALOVE</h3>
-            <span class="symbol">&#8399&#8399</span>
-            <span class="restraunt__menu">Пицца</span>
-            <span class="restraunt__time">15 - 25 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/zyu.png" alt="restraunt card" />
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/zyu.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">Zю кафе - Тверская</h3>
+                <span class="symbol">&#8399&#8399</span>
+                <span class="restaurant__menu">Японская</span>
+                <span class="restaurant__time">25 - 35 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">Zю кафе - Тверская</h3>
-            <span class="symbol">&#8399&#8399</span>
-            <span class="restraunt__menu">Японская</span>
-            <span class="restraunt__time">25 - 35 мин</span>
-          </div>
-          <div class="restraunt">
-            <div class="restraunt__cardImg">
-              <img class="restraunt_img" src="./img/restraunt/barbq.png" alt="restraunt card" />
+            <div class="restaurant col-xs-12 col-md-6 col-lg-4 col-xl-4">
+              <a href="./lib/restraunt.html">
+                <div class="restaurant__cardImg">
+                  <img class="restaurant__img" src="./img/restaurant/barbq.png" alt="restaurant card" />
+                </div>
+                <h3 class="card__title">Bar BQ Cafe - Манежная</h3>
+                <span class="symbol">&#8399&#8399&#8399</span>
+                <span class="restaurant__menu">Европейская</span>
+                <span class="restaurant__time">30 - 40 мин</span>
+              </a>
             </div>
-            <h3 class="card__title">Bar BQ Cafe - Манежная</h3>
-            <span class="symbol">&#8399&#8399&#8399</span>
-            <span class="restraunt__menu">Европейская</span>
-            <span class="restraunt__time">30 - 40 мин</span>
           </div>
         </section>
       </div>
@@ -144,39 +170,71 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__logo"><img src="./img/logo/white-logo.svg" alt="white logo" class="logo__item"></div>
-            <div class="footer__body">
-                <div class="footer__content">
+            <div class="footer__body row">
+                <div class="footer__content col-xs-12 col-md-4 col-xl-4 col-lg-4">
                     <div class="language">
                             <span class="language__logo">
                               <svg width="16" height="16" class="language__icon">
                                 <use xlink:href="./img/icons.svg#planet"></use>
                               </svg>
+                              <span class="language__value">Русский</span>
                             </span>
-                            <span class="language__value">Русский</span>
+                            
                             <span class="language__bird">
-                              <svg width="14" height="8" class="bird">
-                                <use xlink:href="./img/icons.svg#bird"></use>
+                              <svg width="14" height="8" class="language__icon">
+                                <use xlink:href="./img/icons.svg#arrow"></use>
                               </svg>
                             </span>
                             </span>
-                      </div>
+                    </div>
 
-                    <div class="footer_hashtag"><span class="hash">#</span>UberEats</div>
+                    <div class="footer_hashtag">
+                      <span class="hash">#</span>UberEats
+                    </div>
+                    <svg width="24" height="24" class="social_icon">
+                      <use xlink:href="./img/icons.svg#facebook"></use>
+                    </svg>
+                    <svg width="24" height="24" class="social_icon">
+                      <use xlink:href="./img/icons.svg#bird"></use>
+                    </svg>
+                    <svg width="24" height="24" class="social_icon">
+                      <use xlink:href="./img/icons.svg#insta"></use>
+                    </svg>
                 </div>
                 
-                <div class="footer__content">
-                  
+                <div class="footer__content col-xs-12 col-md-4 col-xl-4 col-lg-4">
+                  <ul class="footer__list">
+                    <li class="footer__listItem"><a href="#" class="footer__link">Об UberEats</a></li>
+                    <li class="footer__listItem"><a href="#" class="footer__link">Станьте партнёром по доставке</a></li>
+                    <li class="footer__listItem"><a href="#" class="footer__link">Станьте парнёром-рестораном</a></li>
+                  </ul>
                 </div>
-                <div class="footer__content"></div>
+                <div class="footer__content col-xs-12 col-md-4 col-xl-4 col-lg-4">
+                  <ul class="footer__list">
+                    <li class="footer__listItem"><a href="#" class="footer__link">Все города</a></li>
+                    <li class="footer__listItem"><a href="#" class="footer__link">Цены</a></li>
+                    <li class="footer__listItem"><a href="#" class="footer__link">Помощь</a></li>
+                    <li class="footer__listItem"><a href="#" class="footer__link">FAQs</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="footer_apps ">
+              <div class="app   "><a href="#"><img src="./img/logo/appMarket.png" alt="IOS app store" class="app__img"></a></div>
+              <div class="app   "><a href="#"><img src="./img/logo/playMarket.png" alt="android app store" class="app__img"></a></div>
+            </div>
+            <div class="footer__copyright row">
+              <div class="copyright__item col-xs-12 col-md-4 col-xl-4 col-lg-4">© 2017 Uber Technologies Inc.</div>
+              <div class="copyright__item col-xs-12 col-md-4 col-xl-4 col-lg-4">Обработка персональных данных</div>
+              <div class="copyright__item col-xs-12 col-md-4 col-xl-4 col-lg-4">Пользовательское соглашение</div>
             </div>
         </div>
     </footer>
+    <a href="#" title="Вернуться к началу" class="topbutton">
+      <svg width="16" height="25" class="topButton_icon">
+        <use xlink:href="./img/icons.svg#arrow2"></use>
+      </svg>
+    </a>
     <script src="./js/main.js"></script>
   </body>
 </html>
 
-<!-- 
-  <svg width="24" height="24" class="language__icon">
-                                <use xlink:href="./img/icons.svg#bell-icons"></use>
-                              </svg>
--->
