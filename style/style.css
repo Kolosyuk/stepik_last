@@ -9,7 +9,7 @@ html, body{
 .body{
     font-family: 'Roboto', serif;
 }
-
+/* header */
 .header{
     position: fixed;
     top: 0;
@@ -58,9 +58,10 @@ html, body{
     cursor: pointer;
 }
 
+/**************************** main down *************************/
+
 .main__form {
     margin-top: 7em;
-    
 }
 
 .main__input{
@@ -161,6 +162,7 @@ html, body{
     line-height: 1.3125rem;
 }
 
+/******************** footer down *************************/
 .footer {
     background: #262626;
     color: #ffffff;
